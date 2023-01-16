@@ -39,3 +39,5 @@ mongoose.connect(uri, options).then(
     /** handle initial connection error */
     err => { console.log(err) }
 );
+
+app.use('/api', require('../src/route/viaje'));
